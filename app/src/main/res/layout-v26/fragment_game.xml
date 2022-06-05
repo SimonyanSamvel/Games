@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryDark"
+    tools:context=".ui.game.GameFragment">
+
+    <Toolbar
+        android:id="@+id/gameToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:navigationIcon="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gameNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/gameName"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/gameToolBar" />
+
+    <TextView
+        android:id="@+id/player1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        app:layout_constraintBottom_toBottomOf="@id/verticalLine2"
+        app:layout_constraintEnd_toStartOf="@id/player2TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="o" />
+
+    <TextView
+        android:id="@+id/player2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive"
+        app:layout_constraintBottom_toBottomOf="@id/verticalLine2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/player1TextView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="o" />
+
+    <View
+        android:id="@+id/verticalLine1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/verticalLine2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/player1TextView" />
+
+    <View
+        android:id="@+id/horizontalLine1"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/verticalLine4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/verticalLine1" />
+
+    <View
+        android:id="@+id/horizontalLine2"
+        android:layout_width="2dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/verticalLine4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/verticalLine1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/verticalLine2"
+        app:layout_constraintTop_toTopOf="@id/verticalLine1">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4sp" />
+
+        <View
+            android:id="@+id/horizontalLine3"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4sp" />
+
+        <View
+            android:id="@+id/horizontalLine4"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/verticalLine3"
+        app:layout_constraintTop_toTopOf="@id/verticalLine2">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4sp" />
+
+        <View
+            android:id="@+id/horizontalLine5"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4sp" />
+
+        <View
+            android:id="@+id/horizontalLine6"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/verticalLine4"
+        app:layout_constraintTop_toTopOf="@id/verticalLine3">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4sp" />
+
+        <View
+            android:id="@+id/horizontalLine7"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4sp" />
+
+        <View
+            android:id="@+id/horizontalLine8"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="4sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/verticalLine2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/gameStatusTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/verticalLine3"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/verticalLine4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/verticalLine2" />
+
+    <View
+        android:id="@+id/verticalLine4"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/verticalLine2" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primaryDark"
+        android:fontFamily="serif"
+        android:text="@string/reset"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/gameStatusTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verticalLine4" />
+
+    <TextView
+        android:id="@+id/gameStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20sp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
